@@ -16,8 +16,8 @@ from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
     QImage, QKeySequence, QLinearGradient, QPainter,
     QPalette, QPixmap, QRadialGradient, QTransform)
 from PySide6.QtWidgets import (QApplication, QFrame, QHBoxLayout, QLabel,
-    QMainWindow, QPushButton, QSizePolicy, QVBoxLayout,
-    QWidget)
+    QMainWindow, QProgressBar, QPushButton, QSizePolicy,
+    QVBoxLayout, QWidget)
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
@@ -41,13 +41,18 @@ class Ui_MainWindow(object):
         self.frame_2.setObjectName(u"frame_2")
         self.frame_2.setMinimumSize(QSize(200, 500))
         self.frame_2.setMaximumSize(QSize(16777215, 500))
+        self.verticalLayout_5 = QVBoxLayout(self.frame_2)
+        self.verticalLayout_5.setObjectName(u"verticalLayout_5")
         self.label_5 = QLabel(self.frame_2)
         self.label_5.setObjectName(u"label_5")
         self.label_5.setEnabled(True)
-        self.label_5.setGeometry(QRect(0, 20, 301, 451))
-        self.label_5.setPixmap(QPixmap("images/Group 5.png"))
+        self.label_5.setMaximumSize(QSize(250, 350))
+        self.label_5.setPixmap(QPixmap(u"../images/Group 5.png"))
         self.label_5.setScaledContents(True)
         self.label_5.setAlignment(Qt.AlignmentFlag.AlignCenter)
+
+        self.verticalLayout_5.addWidget(self.label_5)
+
 
         self.horizontalLayout_2.addWidget(self.frame_2)
 
@@ -73,6 +78,7 @@ class Ui_MainWindow(object):
         font1.setFamilies([u"a_Concepto"])
         font1.setPointSize(42)
         self.label.setFont(font1)
+        self.label.setStyleSheet(u"text-shadow: -1px 2px 6px rgba(0, 0, 0, 0.5);")
         self.label.setAlignment(Qt.AlignmentFlag.AlignCenter)
 
         self.verticalLayout.addWidget(self.label)
@@ -80,6 +86,7 @@ class Ui_MainWindow(object):
         self.label_2 = QLabel(self.counts)
         self.label_2.setObjectName(u"label_2")
         self.label_2.setFont(font1)
+        self.label_2.setStyleSheet(u"text-shadow: -1px 2px 6px rgba(0, 0, 0, 0.5);")
         self.label_2.setTextFormat(Qt.TextFormat.AutoText)
         self.label_2.setAlignment(Qt.AlignmentFlag.AlignCenter)
         self.label_2.setWordWrap(False)
@@ -87,7 +94,7 @@ class Ui_MainWindow(object):
         self.verticalLayout.addWidget(self.label_2)
 
 
-        self.verticalLayout_3.addWidget(self.counts)
+        self.verticalLayout_3.addWidget(self.counts, 0, Qt.AlignmentFlag.AlignVCenter)
 
         self.pushButton = QPushButton(self.mainframe)
         self.pushButton.setObjectName(u"pushButton")
@@ -100,7 +107,7 @@ class Ui_MainWindow(object):
         self.pushButton.setAutoFillBackground(False)
         self.pushButton.setStyleSheet(u"border: 0;")
         icon = QIcon()
-        icon.addFile("images/Huobi BTC (HBTC) 01.png", QSize(), QIcon.Mode.Normal, QIcon.State.On)
+        icon.addFile(u"../images/Huobi BTC (HBTC) 01.png", QSize(), QIcon.Mode.Normal, QIcon.State.On)
         self.pushButton.setIcon(icon)
         self.pushButton.setIconSize(QSize(300, 300))
         self.pushButton.setCheckable(False)
@@ -116,7 +123,8 @@ class Ui_MainWindow(object):
         font3.setFamilies([u"a_Concepto"])
         font3.setPointSize(22)
         self.pushButton_2.setFont(font3)
-        self.pushButton_2.setStyleSheet(u"border: none;")
+        self.pushButton_2.setStyleSheet(u"border: none;\n"
+"text-shadow: -1px 2px 6px rgba(0, 0, 0, 0.5);")
 
         self.verticalLayout_3.addWidget(self.pushButton_2)
 
@@ -136,38 +144,51 @@ class Ui_MainWindow(object):
         self.label_3 = QLabel(self.rang)
         self.label_3.setObjectName(u"label_3")
         self.label_3.setFont(font3)
+        self.label_3.setLayoutDirection(Qt.LayoutDirection.LeftToRight)
+        self.label_3.setStyleSheet(u"text-shadow: -1px 2px 6px rgba(0, 0, 0, 0.5);")
         self.label_3.setAlignment(Qt.AlignmentFlag.AlignCenter)
 
         self.verticalLayout_2.addWidget(self.label_3)
 
-        self.line = QFrame(self.rang)
-        self.line.setObjectName(u"line")
-        font4 = QFont()
-        font4.setPointSize(30)
-        font4.setBold(True)
-        self.line.setFont(font4)
-        self.line.setCursor(QCursor(Qt.CursorShape.ArrowCursor))
-        self.line.setStyleSheet(u"")
-        self.line.setFrameShadow(QFrame.Shadow.Plain)
-        self.line.setLineWidth(10)
-        self.line.setMidLineWidth(5)
-        self.line.setFrameShape(QFrame.Shape.HLine)
+        self.progressBar = QProgressBar(self.rang)
+        self.progressBar.setObjectName(u"progressBar")
+        self.progressBar.setMinimumSize(QSize(200, 0))
+        self.progressBar.setMaximumSize(QSize(300, 16777215))
+        self.progressBar.setLayoutDirection(Qt.LayoutDirection.LeftToRight)
+        self.progressBar.setAutoFillBackground(False)
+        self.progressBar.setStyleSheet(u"QProgressBar{\n"
+"	background-color: rgb(103, 103, 103);\n"
+"	border-radius: 5px;\n"
+"}\n"
+"\n"
+"QProgressBar::chunk{\n"
+"	border-radius: 5px;\n"
+"	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(85, 255, 127, 255), stop:1 rgba(85, 255, 255, 255));\n"
+"}")
+        self.progressBar.setValue(22)
+        self.progressBar.setAlignment(Qt.AlignmentFlag.AlignCenter)
+        self.progressBar.setTextVisible(False)
+        self.progressBar.setFormat(u"%p%")
 
-        self.verticalLayout_2.addWidget(self.line)
+        self.verticalLayout_2.addWidget(self.progressBar)
 
         self.label_4 = QLabel(self.rang)
         self.label_4.setObjectName(u"label_4")
-        self.label_4.setFont(font3)
+        font4 = QFont()
+        font4.setFamilies([u"a_Concepto"])
+        font4.setPointSize(18)
+        self.label_4.setFont(font4)
+        self.label_4.setStyleSheet(u"text-shadow: -1px 2px 6px rgba(0, 0, 0, 0.5);")
         self.label_4.setAlignment(Qt.AlignmentFlag.AlignCenter)
 
         self.verticalLayout_2.addWidget(self.label_4)
 
 
-        self.verticalLayout_4.addWidget(self.rang)
+        self.verticalLayout_4.addWidget(self.rang, 0, Qt.AlignmentFlag.AlignVCenter)
 
         self.widget = QWidget(self.frame)
         self.widget.setObjectName(u"widget")
-        self.widget.setMinimumSize(QSize(200, 200))
+        self.widget.setMinimumSize(QSize(200, 400))
         self.widget.setMaximumSize(QSize(16777215, 300))
 
         self.verticalLayout_4.addWidget(self.widget)
@@ -193,6 +214,9 @@ class Ui_MainWindow(object):
         self.pushButton.setText("")
         self.pushButton_2.setText(QCoreApplication.translate("MainWindow", u"\u041c\u0410\u0413\u0410\u0417\u0418\u041d", None))
         self.label_3.setText(QCoreApplication.translate("MainWindow", u"RANG", None))
-        self.label_4.setText(QCoreApplication.translate("MainWindow", u"253/1000", None))
+#if QT_CONFIG(accessibility)
+        self.progressBar.setAccessibleName("")
+#endif // QT_CONFIG(accessibility)
+        self.label_4.setText(QCoreApplication.translate("MainWindow", u"0/1000", None))
     # retranslateUi
 
