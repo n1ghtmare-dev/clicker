@@ -1,36 +1,47 @@
-import aiosqlite
+import sqlite3
+from threading import Lock
+
+lock = Lock()
 
 class Database:
-    def __init__(self, file_name):
-        self.file_name = file_name
+    def __init__(self, db_file):
+        self.connection = sqlite3.connect(db_file, check_same_thread=False, timeout=1)
+        self.cursor = self.connection.cursor()
 
-    # Метод, обрабатывающий запросы
-    async def execute(self, sql: str, parameters: tuple=None, fetchone=None, fetchall=False, commit=False):
-        async with aiosqlite.connect(self.file_name) as db:
-            if not parameters:
-                parameters = ()
-            data = None
-            cursor = await db.cursor()
-            await cursor.execute(sql, parameters) # Отправляем запрос
+    def edit_click(self, value):
+        with self.connection:
+            try:
+                lock.acquire(True)
+                sql = "UPDATE user SET one_click = ?"
+                self.cursor.execute(sql, (value,))
+            finally:
+                lock.release()
 
-            if commit:
-                await db.commit()
-            if fetchone:
-                data = await cursor.fetchone()
-            if fetchall:
-                data = await cursor.fetchall()
+    def get_user_info(self):
+        with self.connection:
+            try:
+                lock.acquire(True)
+                sql = "SELECT * FROM user"
+                res = self.cursor.execute(sql).fetchone()
+                return res
+            finally:
+                lock.release()
 
-            return data
+    def get_level_info(self, number):
+        with self.connection:
+            try:
+                lock.acquire(True)
+                sql = "SELECT * FROM levels WHERE number = ?"
+                res = self.cursor.execute(sql, (number,)).fetchone()
+                return res
+            finally:
+                lock.release()
 
-    async def edit_click(self, value):
-        sql = "UPDATE user SET click = ?"
-        await self.execute(
-            sql=sql,
-            parameters=(value),
-            commit=True
-            )
-
-    async def get_click(self):
-        sql = "SELECT * FROM user"
-        res = await self.execute(sql=sql, fetchall=True)
-        return res[0][0]
+    def save_user_data(self, one_click, clicks_counter):
+        with self.connection:
+            try:
+                lock.acquire(True)
+                sql = "UPDATE user SET one_click = ?, clicks_counter = ?"
+                self.cursor.execute(sql, (one_click, clicks_counter,))
+            finally:
+                lock.release()

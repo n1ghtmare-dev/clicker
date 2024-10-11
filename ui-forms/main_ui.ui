@@ -60,10 +60,87 @@ color: #fff;</string>
       <property name="maximumSize">
        <size>
         <width>16777215</width>
-        <height>500</height>
+        <height>600</height>
        </size>
       </property>
+      <property name="frameShape">
+       <enum>QFrame::Shape::NoFrame</enum>
+      </property>
       <layout class="QVBoxLayout" name="verticalLayout_5">
+       <item>
+        <widget class="QFrame" name="verticalFrame">
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>180</height>
+          </size>
+         </property>
+         <property name="focusPolicy">
+          <enum>Qt::FocusPolicy::ClickFocus</enum>
+         </property>
+         <layout class="QGridLayout" name="gridLayout">
+          <item row="0" column="0" alignment="|Qt::AlignmentFlag::AlignVCenter">
+           <widget class="QPushButton" name="pushButton_3">
+            <property name="focusPolicy">
+             <enum>Qt::FocusPolicy::ClickFocus</enum>
+            </property>
+            <property name="autoFillBackground">
+             <bool>false</bool>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-radius: 40px;</string>
+            </property>
+            <property name="inputMethodHints">
+             <set>Qt::InputMethodHint::ImhHiddenText</set>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normalon>../images/exit.png</normalon>
+             </iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>40</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="autoDefault">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <spacer name="verticalSpacer_2">
+            <property name="orientation">
+             <enum>Qt::Orientation::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="0" column="1">
+           <spacer name="horizontalSpacer">
+            <property name="orientation">
+             <enum>Qt::Orientation::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </widget>
+       </item>
        <item>
         <widget class="QLabel" name="label_5">
          <property name="enabled">
@@ -92,7 +169,7 @@ color: #fff;</string>
       </layout>
      </widget>
     </item>
-    <item alignment="Qt::AlignmentFlag::Qt::AlignmentFlag::AlignVCenter">
+    <item alignment="|Qt::AlignmentFlag::AlignVCenter">
      <widget class="QFrame" name="mainframe">
       <property name="minimumSize">
        <size>
@@ -110,7 +187,7 @@ color: #fff;</string>
        <property name="spacing">
         <number>100</number>
        </property>
-       <item alignment="Qt::AlignmentFlag::Qt::AlignmentFlag::AlignVCenter">
+       <item>
         <widget class="QFrame" name="counts">
          <property name="maximumSize">
           <size>
@@ -233,7 +310,7 @@ color: #fff;</string>
          </property>
         </widget>
        </item>
-       <item>
+       <item alignment="|Qt::AlignmentFlag::AlignVCenter">
         <widget class="QPushButton" name="pushButton_2">
          <property name="font">
           <font>
@@ -243,7 +320,9 @@ color: #fff;</string>
          </property>
          <property name="styleSheet">
           <string notr="true">border: none;
-text-shadow: -1px 2px 6px rgba(0, 0, 0, 0.5);</string>
+background-color: rgba(255, 255, 255, 100);
+border-radius: 8px;
+padding: 10px 20px;</string>
          </property>
          <property name="text">
           <string>МАГАЗИН</string>
@@ -262,7 +341,7 @@ text-shadow: -1px 2px 6px rgba(0, 0, 0, 0.5);</string>
        </size>
       </property>
       <layout class="QVBoxLayout" name="verticalLayout_4">
-       <item alignment="|Qt::AlignmentFlag::AlignVCenter">
+       <item>
         <widget class="QFrame" name="rang">
          <property name="maximumSize">
           <size>
@@ -341,6 +420,40 @@ QProgressBar::chunk{
             </property>
            </widget>
           </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QFrame" name="frame_3">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::Shape::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Shadow::Raised</enum>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_6">
+          <item>
+           <widget class="QLabel" name="label_6">
+            <property name="font">
+             <font>
+              <family>a_Concepto</family>
+              <pointsize>18</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>0</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignmentFlag::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
           <item>
            <widget class="QLabel" name="label_4">
             <property name="font">
@@ -353,10 +466,29 @@ QProgressBar::chunk{
              <string notr="true">text-shadow: -1px 2px 6px rgba(0, 0, 0, 0.5);</string>
             </property>
             <property name="text">
-             <string>0/1000</string>
+             <string>1000</string>
             </property>
             <property name="alignment">
              <set>Qt::AlignmentFlag::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_4">
+            <property name="font">
+             <font>
+              <family>a_Concepto</family>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border: none;
+background-color: rgba(255, 255, 255, 100);
+border-radius: 8px;
+padding: 10px 20px;</string>
+            </property>
+            <property name="text">
+             <string>Улучшить</string>
             </property>
            </widget>
           </item>
@@ -364,19 +496,28 @@ QProgressBar::chunk{
         </widget>
        </item>
        <item>
-        <widget class="QWidget" name="widget" native="true">
-         <property name="minimumSize">
-          <size>
-           <width>200</width>
-           <height>400</height>
-          </size>
+        <widget class="QFrame" name="frame_4">
+         <property name="frameShape">
+          <enum>QFrame::Shape::StyledPanel</enum>
          </property>
-         <property name="maximumSize">
-          <size>
-           <width>16777215</width>
-           <height>300</height>
-          </size>
+         <property name="frameShadow">
+          <enum>QFrame::Shadow::Raised</enum>
          </property>
+         <layout class="QVBoxLayout" name="verticalLayout_7">
+          <item>
+           <spacer name="verticalSpacer">
+            <property name="orientation">
+             <enum>Qt::Orientation::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>10</width>
+              <height>320</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
         </widget>
        </item>
       </layout>
