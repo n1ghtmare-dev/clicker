@@ -3,11 +3,6 @@ from PySide6.QtWidgets import QApplication, QMainWindow
 from PySide6.QtCore import Qt
 =======
 from PySide6.QtCore import QThreadPool
-<<<<<<< HEAD
-from PySide6.QtGui import QPixmap
->>>>>>> 028a1b2 (added assets, ranks system, new GUI)
-=======
->>>>>>> parent of 028a1b2 (added assets, ranks system, new GUI)
 from ui_main import Ui_MainWindow
 from database import Database
 import asyncio
@@ -20,30 +15,13 @@ class MinerWindow(QMainWindow, Ui_MainWindow):
         super(MinerWindow, self).__init__()
         self.setupUi(self)
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
->>>>>>> parent of 028a1b2 (added assets, ranks system, new GUI)
         # Объявляем переменные с нормальными названиями
         self.click_btn = self.pushButton
         self.clicks_counter = self.label_2
         self.rang_bar = self.progressBar
-<<<<<<< HEAD
-
-        # Объявляем события
-        self.click_btn.clicked.connect(self.click)
-
-    # Обновляем переменные
-    async def data_update(self):
-        self.one_click = await db.get_click()
-        print(self.one_click)
-=======
-=======
         self.rating = self.label_6
         self.goal = self.label_4
 
->>>>>>> parent of 028a1b2 (added assets, ranks system, new GUI)
         # Объявляем переменные, которые обновятся
         self.one_click = 1
 
@@ -69,13 +47,7 @@ class MinerWindow(QMainWindow, Ui_MainWindow):
         level_info = db.get_level_info(user_info[2])
         self.goal.setText(str(level_info[2]))
         self.rating.setText(self.clicks_counter.text())
-<<<<<<< HEAD
-        self.rank_bar.setValue(round((int(self.clicks_counter.text()) / int(self.goal.text()) * 100)))
-        self.rank_img.setPixmap(QPixmap(u":/images/ranks/Shield/{}".format(level_info[3])))
->>>>>>> 028a1b2 (added assets, ranks system, new GUI)
-=======
         self.rang_bar.setValue(round((int(self.clicks_counter.text()) / int(self.goal.text()) * 100)))
->>>>>>> parent of 028a1b2 (added assets, ranks system, new GUI)
 
     def click(self):
         click = int(self.clicks_counter.text())+self.one_click

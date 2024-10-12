@@ -63,16 +63,6 @@ color: #fff;</string>
         <height>500</height>
        </size>
       </property>
-<<<<<<< HEAD
-<<<<<<< HEAD
-      <layout class="QVBoxLayout" name="verticalLayout_5">
-       <item>
-=======
-      <property name="styleSheet">
-       <string notr="true">background: none;</string>
-      </property>
-=======
->>>>>>> parent of 028a1b2 (added assets, ranks system, new GUI)
       <property name="frameShape">
        <enum>QFrame::Shape::NoFrame</enum>
       </property>
@@ -321,18 +311,8 @@ color: #fff;</string>
          </property>
         </widget>
        </item>
-<<<<<<< HEAD
-<<<<<<< HEAD
-       <item>
-        <widget class="QPushButton" name="pushButton_2">
-=======
-       <item alignment="Qt::AlignmentFlag::Qt::AlignmentFlag::AlignVCenter">
-        <widget class="QPushButton" name="menu_btn">
->>>>>>> 028a1b2 (added assets, ranks system, new GUI)
-=======
        <item alignment="|Qt::AlignmentFlag::AlignVCenter">
         <widget class="QPushButton" name="pushButton_2">
->>>>>>> parent of 028a1b2 (added assets, ranks system, new GUI)
          <property name="font">
           <font>
            <family>a_Concepto</family>
@@ -341,13 +321,6 @@ color: #fff;</string>
          </property>
          <property name="styleSheet">
           <string notr="true">border: none;
-<<<<<<< HEAD
-<<<<<<< HEAD
-text-shadow: -1px 2px 6px rgba(0, 0, 0, 0.5);</string>
-=======
-background: none;
-=======
->>>>>>> parent of 028a1b2 (added assets, ranks system, new GUI)
 background-color: rgba(255, 255, 255, 100);
 border-radius: 8px;
 padding: 10px 20px;</string>
@@ -370,15 +343,7 @@ padding: 10px 20px;</string>
        </size>
       </property>
       <layout class="QVBoxLayout" name="verticalLayout_4">
-<<<<<<< HEAD
-<<<<<<< HEAD
-       <item alignment="|Qt::AlignmentFlag::AlignVCenter">
-=======
-       <item alignment="Qt::AlignmentFlag::Qt::AlignmentFlag::AlignVCenter">
->>>>>>> 028a1b2 (added assets, ranks system, new GUI)
-=======
        <item>
->>>>>>> parent of 028a1b2 (added assets, ranks system, new GUI)
         <widget class="QFrame" name="rang">
          <property name="maximumSize">
           <size>
@@ -457,10 +422,6 @@ QProgressBar::chunk{
             </property>
            </widget>
           </item>
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
          </layout>
         </widget>
        </item>
@@ -479,7 +440,6 @@ QProgressBar::chunk{
           <enum>QFrame::Shadow::Raised</enum>
          </property>
          <layout class="QVBoxLayout" name="verticalLayout_6">
->>>>>>> parent of 028a1b2 (added assets, ranks system, new GUI)
           <item>
            <widget class="QLabel" name="label_6">
             <property name="font">
@@ -542,45 +502,13 @@ padding: 10px 20px;</string>
         </widget>
        </item>
        <item>
-<<<<<<< HEAD
-<<<<<<< HEAD
-        <widget class="QWidget" name="widget" native="true">
-         <property name="minimumSize">
-          <size>
-           <width>200</width>
-           <height>400</height>
-          </size>
-         </property>
-         <property name="maximumSize">
-          <size>
-           <width>16777215</width>
-           <height>300</height>
-          </size>
-         </property>
-        </widget>
-=======
-        <spacer name="verticalSpacer_3">
-         <property name="orientation">
-          <enum>Qt::Orientation::Vertical</enum>
-=======
         <widget class="QFrame" name="frame_4">
          <property name="frameShape">
           <enum>QFrame::Shape::StyledPanel</enum>
->>>>>>> parent of 028a1b2 (added assets, ranks system, new GUI)
          </property>
          <property name="frameShadow">
           <enum>QFrame::Shadow::Raised</enum>
          </property>
-<<<<<<< HEAD
-         <property name="sizeHint" stdset="0">
-          <size>
-           <width>20</width>
-           <height>200</height>
-          </size>
-         </property>
-        </spacer>
->>>>>>> 028a1b2 (added assets, ranks system, new GUI)
-=======
          <layout class="QVBoxLayout" name="verticalLayout_7">
           <item>
            <spacer name="verticalSpacer">
@@ -597,7 +525,6 @@ padding: 10px 20px;</string>
           </item>
          </layout>
         </widget>
->>>>>>> parent of 028a1b2 (added assets, ranks system, new GUI)
        </item>
       </layout>
      </widget>
