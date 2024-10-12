@@ -23,6 +23,7 @@ class Database:
             return data
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     async def edit_click(self, value):
         sql = "UPDATE user SET click = ?"
         await self.execute(
@@ -61,6 +62,8 @@ class Database:
             finally:
                 lock.release()
 
+=======
+>>>>>>> parent of 028a1b2 (added assets, ranks system, new GUI)
     def save_user_data(self, one_click, clicks_counter):
         with self.connection:
             try:
