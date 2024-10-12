@@ -38,7 +38,7 @@
    <bool>false</bool>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-color: qlineargradient(spread:pad, x1:0.142, y1:0, x2:0.857955, y2:1, stop:0 rgba(35, 14, 54, 255), stop:1 rgba(102, 40, 156, 255));</string>
+   <string notr="true">background-image: url(:/images/winterbg.png)</string>
   </property>
   <property name="inputMethodHints">
    <set>Qt::InputMethodHint::ImhNone</set>
@@ -63,8 +63,106 @@ color: #fff;</string>
         <height>500</height>
        </size>
       </property>
+<<<<<<< HEAD
       <layout class="QVBoxLayout" name="verticalLayout_5">
        <item>
+=======
+      <property name="styleSheet">
+       <string notr="true">background: none;</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Shape::NoFrame</enum>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_5">
+       <item>
+        <spacer name="verticalSpacer_2">
+         <property name="orientation">
+          <enum>Qt::Orientation::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item alignment="|Qt::AlignmentFlag::AlignVCenter">
+        <widget class="QFrame" name="frame_4">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>100</height>
+          </size>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::Shape::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Shadow::Raised</enum>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_4">
+          <item>
+           <spacer name="horizontalSpacer">
+            <property name="orientation">
+             <enum>Qt::Orientation::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item alignment="|Qt::AlignmentFlag::AlignVCenter">
+           <widget class="QPushButton" name="skin_btn">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="font">
+             <font>
+              <family>a_Concepto</family>
+              <pointsize>12</pointsize>
+             </font>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border: none;
+background: none;
+background-color: rgba(255, 255, 255, 100);
+border-radius: 8px;
+padding: 10px 25px;
+</string>
+            </property>
+            <property name="text">
+             <string>Скин</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_2">
+            <property name="orientation">
+             <enum>Qt::Orientation::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+>>>>>>> 028a1b2 (added assets, ranks system, new GUI)
         <widget class="QLabel" name="label_5">
          <property name="enabled">
           <bool>true</bool>
@@ -75,11 +173,14 @@ color: #fff;</string>
            <height>350</height>
           </size>
          </property>
+         <property name="styleSheet">
+          <string notr="true">background: none;</string>
+         </property>
          <property name="text">
           <string/>
          </property>
          <property name="pixmap">
-          <pixmap>../images/Group 5.png</pixmap>
+          <pixmap resource="../images/images.qrc">:/images/humster.png</pixmap>
          </property>
          <property name="scaledContents">
           <bool>true</bool>
@@ -88,6 +189,22 @@ color: #fff;</string>
           <set>Qt::AlignmentFlag::AlignCenter</set>
          </property>
         </widget>
+       </item>
+       <item>
+        <spacer name="verticalSpacer">
+         <property name="orientation">
+          <enum>Qt::Orientation::Vertical</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Policy::Fixed</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>50</height>
+          </size>
+         </property>
+        </spacer>
        </item>
       </layout>
      </widget>
@@ -105,6 +222,9 @@ color: #fff;</string>
         <width>400</width>
         <height>550</height>
        </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background: none;</string>
       </property>
       <layout class="QVBoxLayout" name="verticalLayout_3">
        <property name="spacing">
@@ -136,10 +256,10 @@ color: #fff;</string>
              </font>
             </property>
             <property name="styleSheet">
-             <string notr="true">text-shadow: -1px 2px 6px rgba(0, 0, 0, 0.5);</string>
+             <string notr="true">background: none;</string>
             </property>
             <property name="text">
-             <string>COUNT</string>
+             <string>МОНЕТЫ</string>
             </property>
             <property name="alignment">
              <set>Qt::AlignmentFlag::AlignCenter</set>
@@ -147,7 +267,7 @@ color: #fff;</string>
            </widget>
           </item>
           <item>
-           <widget class="QLabel" name="label_2">
+           <widget class="QLabel" name="clicks_counter">
             <property name="font">
              <font>
               <family>a_Concepto</family>
@@ -155,7 +275,8 @@ color: #fff;</string>
              </font>
             </property>
             <property name="styleSheet">
-             <string notr="true">text-shadow: -1px 2px 6px rgba(0, 0, 0, 0.5);</string>
+             <string notr="true">
+background: none;</string>
             </property>
             <property name="text">
              <string>0</string>
@@ -175,7 +296,7 @@ color: #fff;</string>
         </widget>
        </item>
        <item alignment="Qt::AlignmentFlag::Qt::AlignmentFlag::AlignVCenter">
-        <widget class="QPushButton" name="pushButton">
+        <widget class="QPushButton" name="click_btn">
          <property name="enabled">
           <bool>true</bool>
          </property>
@@ -196,18 +317,22 @@ color: #fff;</string>
            <pointsize>30</pointsize>
           </font>
          </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
          <property name="autoFillBackground">
           <bool>false</bool>
          </property>
          <property name="styleSheet">
-          <string notr="true">border: 0;</string>
+          <string notr="true">border: 0;
+background: none;</string>
          </property>
          <property name="text">
           <string/>
          </property>
          <property name="icon">
           <iconset>
-           <normalon>../images/Huobi BTC (HBTC) 01.png</normalon>
+           <normalon>:/images/click-huobi.png</normalon>
           </iconset>
          </property>
          <property name="iconSize">
@@ -233,17 +358,32 @@ color: #fff;</string>
          </property>
         </widget>
        </item>
+<<<<<<< HEAD
        <item>
         <widget class="QPushButton" name="pushButton_2">
+=======
+       <item alignment="Qt::AlignmentFlag::Qt::AlignmentFlag::AlignVCenter">
+        <widget class="QPushButton" name="menu_btn">
+>>>>>>> 028a1b2 (added assets, ranks system, new GUI)
          <property name="font">
           <font>
            <family>a_Concepto</family>
            <pointsize>22</pointsize>
           </font>
          </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
          <property name="styleSheet">
           <string notr="true">border: none;
+<<<<<<< HEAD
 text-shadow: -1px 2px 6px rgba(0, 0, 0, 0.5);</string>
+=======
+background: none;
+background-color: rgba(255, 255, 255, 100);
+border-radius: 8px;
+padding: 10px 20px;</string>
+>>>>>>> 028a1b2 (added assets, ranks system, new GUI)
          </property>
          <property name="text">
           <string>МАГАЗИН</string>
@@ -258,21 +398,83 @@ text-shadow: -1px 2px 6px rgba(0, 0, 0, 0.5);</string>
       <property name="minimumSize">
        <size>
         <width>200</width>
-        <height>0</height>
+        <height>300</height>
        </size>
       </property>
+      <property name="styleSheet">
+       <string notr="true">background: none;</string>
+      </property>
       <layout class="QVBoxLayout" name="verticalLayout_4">
+<<<<<<< HEAD
        <item alignment="|Qt::AlignmentFlag::AlignVCenter">
+=======
+       <item alignment="Qt::AlignmentFlag::Qt::AlignmentFlag::AlignVCenter">
+>>>>>>> 028a1b2 (added assets, ranks system, new GUI)
         <widget class="QFrame" name="rang">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
          <property name="maximumSize">
           <size>
            <width>16777215</width>
-           <height>200</height>
+           <height>400</height>
           </size>
          </property>
          <layout class="QVBoxLayout" name="verticalLayout_2">
           <item>
+           <widget class="QFrame" name="frame_3">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>100</height>
+             </size>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::Shape::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Shadow::Raised</enum>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_3">
+             <item>
+              <widget class="QLabel" name="rank_img">
+               <property name="minimumSize">
+                <size>
+                 <width>150</width>
+                 <height>150</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>150</width>
+                 <height>150</height>
+                </size>
+               </property>
+               <property name="pixmap">
+                <pixmap resource="../images/images.qrc">:/images/ranks/Shield/Wood/shield-wood-1.png</pixmap>
+               </property>
+               <property name="scaledContents">
+                <bool>true</bool>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignmentFlag::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
            <widget class="QLabel" name="label_3">
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>80</height>
+             </size>
+            </property>
             <property name="font">
              <font>
               <family>a_Concepto</family>
@@ -286,7 +488,7 @@ text-shadow: -1px 2px 6px rgba(0, 0, 0, 0.5);</string>
              <string notr="true">text-shadow: -1px 2px 6px rgba(0, 0, 0, 0.5);</string>
             </property>
             <property name="text">
-             <string>RANG</string>
+             <string>УРОВЕНЬ 1</string>
             </property>
             <property name="alignment">
              <set>Qt::AlignmentFlag::AlignCenter</set>
@@ -294,11 +496,11 @@ text-shadow: -1px 2px 6px rgba(0, 0, 0, 0.5);</string>
            </widget>
           </item>
           <item>
-           <widget class="QProgressBar" name="progressBar">
+           <widget class="QProgressBar" name="rank_bar">
             <property name="minimumSize">
              <size>
               <width>200</width>
-              <height>0</height>
+              <height>30</height>
              </size>
             </property>
             <property name="maximumSize">
@@ -306,6 +508,11 @@ text-shadow: -1px 2px 6px rgba(0, 0, 0, 0.5);</string>
               <width>300</width>
               <height>16777215</height>
              </size>
+            </property>
+            <property name="font">
+             <font>
+              <stylestrategy>PreferAntialias</stylestrategy>
+             </font>
             </property>
             <property name="accessibleName">
              <string/>
@@ -318,13 +525,13 @@ text-shadow: -1px 2px 6px rgba(0, 0, 0, 0.5);</string>
             </property>
             <property name="styleSheet">
              <string notr="true">QProgressBar{
-	background-color: rgb(103, 103, 103);
-	border-radius: 5px;
+	background-color: rgb(255, 255, 255);
+	border-radius: 15px;
 }
 
 QProgressBar::chunk{
-	border-radius: 5px;
-	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(85, 255, 127, 255), stop:1 rgba(85, 255, 255, 255));
+	border-radius: 15px;
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(2, 97, 123, 255), stop:1 rgba(4, 177, 225, 255))
 }</string>
             </property>
             <property name="value">
@@ -341,8 +548,27 @@ QProgressBar::chunk{
             </property>
            </widget>
           </item>
+<<<<<<< HEAD
+=======
           <item>
-           <widget class="QLabel" name="label_4">
+           <widget class="QLabel" name="rating">
+            <property name="font">
+             <font>
+              <family>a_Concepto</family>
+              <pointsize>18</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>0</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignmentFlag::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+>>>>>>> 028a1b2 (added assets, ranks system, new GUI)
+          <item>
+           <widget class="QLabel" name="goal">
             <property name="font">
              <font>
               <family>a_Concepto</family>
@@ -360,10 +586,36 @@ QProgressBar::chunk{
             </property>
            </widget>
           </item>
+<<<<<<< HEAD
+=======
+          <item>
+           <widget class="QPushButton" name="level_upgrade_btn">
+            <property name="font">
+             <font>
+              <family>a_Concepto</family>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border: none;
+background-color: rgba(255, 255, 255, 100);
+border-radius: 8px;
+padding: 10px 20px;</string>
+            </property>
+            <property name="text">
+             <string>Улучшить</string>
+            </property>
+           </widget>
+          </item>
+>>>>>>> 028a1b2 (added assets, ranks system, new GUI)
          </layout>
         </widget>
        </item>
        <item>
+<<<<<<< HEAD
         <widget class="QWidget" name="widget" native="true">
          <property name="minimumSize">
           <size>
@@ -378,6 +630,22 @@ QProgressBar::chunk{
           </size>
          </property>
         </widget>
+=======
+        <spacer name="verticalSpacer_3">
+         <property name="orientation">
+          <enum>Qt::Orientation::Vertical</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Policy::Fixed</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>200</height>
+          </size>
+         </property>
+        </spacer>
+>>>>>>> 028a1b2 (added assets, ranks system, new GUI)
        </item>
       </layout>
      </widget>
@@ -385,6 +653,8 @@ QProgressBar::chunk{
    </layout>
   </widget>
  </widget>
- <resources/>
+ <resources>
+  <include location="../images/images.qrc"/>
+ </resources>
  <connections/>
 </ui>
