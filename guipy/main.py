@@ -1,7 +1,9 @@
-from PySide6.QtWidgets import QApplication, QMainWindow
+from PySide6.QtWidgets import QApplication, QMainWindow, QWidget
 from PySide6.QtCore import QThreadPool
 from PySide6.QtGui import QPixmap
 from ui_main import Ui_MainWindow
+from ui_menu import Ui_MenuWindow
+from ui_menu_widget import Ui_Form
 from asyncio import create_task
 from database import Database
 from threading import Thread
@@ -18,6 +20,7 @@ class MinerWindow(QMainWindow, Ui_MainWindow):
         super(MinerWindow, self).__init__()
         self.setupUi(self)
 
+
         # Объявляем переменные, которые обновятся
         self.one_click = 1
 
@@ -30,8 +33,17 @@ class MinerWindow(QMainWindow, Ui_MainWindow):
         # Объявляем события
         self.click_btn.clicked.connect(self.click)
         self.level_upgrade_btn.clicked.connect(self.level_upgrade)
+        self.menu_btn.clicked.connect(self.open_menu)
+        self.close_island_btn.clicked.connect(self.close_menu)
 
 
+    # Открытие панели меню
+    def open_menu(self):
+        self.stackedWidget.setCurrentWidget(self.island_page)
+
+
+    def close_menu(self):
+        self.stackedWidget.setCurrentWidget(self.main_page)
 
     # Обновляем переменные
     def data_update(self):
