@@ -3,6 +3,7 @@ from threading import Lock
 
 lock = Lock()
 
+
 class Database:
     def __init__(self, db_file):
         self.connection = sqlite3.connect(db_file, check_same_thread=False, timeout=1)
@@ -70,3 +71,24 @@ class Database:
                 self.cursor.execute(sql, (one_click, clicks_counter,))
             finally:
                 lock.release()
+
+    def get_tasks(self):
+        with self.connection:
+            try:
+                lock.acquire(True)
+                sql = "SELECT * FROM tasks"
+                res = self.cursor.execute(sql).fetchall()
+                return res
+            finally:
+                lock.release()
+
+    def get_task_info(self, task_id):
+        with self.connection:
+            try:
+                lock.acquire(True)
+                sql = "SELECT * FROM tasks WHERE id = ?"
+                res = self.cursor.execute(sql, (task_id,)).fetchone()
+                return res
+            finally:
+                lock.release()
+

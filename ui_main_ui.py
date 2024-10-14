@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'main_ui.ui'
+## Form generated from reading UI file 'main_uiffsNtC.ui'
 ##
-## Created by: Qt User Interface Compiler version 6.7.2
+## Created by: Qt User Interface Compiler version 6.7.3
 ##
 ## WARNING! All changes made in this file will be lost when recompiling UI file!
 ################################################################################
@@ -38,8 +38,8 @@ class Ui_MainWindow(object):
         self.centralwidget.setEnabled(True)
         self.centralwidget.setStyleSheet(u"background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(0, 0, 0, 0), stop:1 rgba(255, 255, 255, 0));\n"
 "color: #fff;")
-        self.verticalLayout_9 = QVBoxLayout(self.centralwidget)
-        self.verticalLayout_9.setObjectName(u"verticalLayout_9")
+        self.verticalLayout_6 = QVBoxLayout(self.centralwidget)
+        self.verticalLayout_6.setObjectName(u"verticalLayout_6")
         self.stackedWidget = QStackedWidget(self.centralwidget)
         self.stackedWidget.setObjectName(u"stackedWidget")
         self.stackedWidget.setCursor(QCursor(Qt.CursorShape.ArrowCursor))
@@ -565,21 +565,464 @@ class Ui_MainWindow(object):
 
         self.scrollArea = QScrollArea(self.island_page)
         self.scrollArea.setObjectName(u"scrollArea")
-        self.scrollArea.setGeometry(QRect(210, 150, 661, 420))
-        self.scrollArea.setMinimumSize(QSize(661, 300))
-        self.scrollArea.setMaximumSize(QSize(661, 420))
-        self.scrollArea.setFrameShape(QFrame.Shape.NoFrame)
-        self.scrollArea.setFrameShadow(QFrame.Shadow.Raised)
+        self.scrollArea.setGeometry(QRect(219, 139, 671, 441))
         self.scrollArea.setWidgetResizable(True)
         self.island_tasks_area = QWidget()
         self.island_tasks_area.setObjectName(u"island_tasks_area")
-        self.island_tasks_area.setGeometry(QRect(0, 0, 661, 420))
-        self.verticalLayout_7 = QVBoxLayout(self.island_tasks_area)
+        self.island_tasks_area.setGeometry(QRect(0, 0, 669, 439))
+        self.frame_12 = QFrame(self.island_tasks_area)
+        self.frame_12.setObjectName(u"frame_12")
+        self.frame_12.setGeometry(QRect(0, 0, 671, 201))
+        self.frame_12.setMinimumSize(QSize(671, 191))
+        self.frame_12.setSizeIncrement(QSize(671, 0))
+        self.frame_12.setFrameShape(QFrame.Shape.StyledPanel)
+        self.frame_12.setFrameShadow(QFrame.Shadow.Raised)
+        self.horizontalLayout_18 = QHBoxLayout(self.frame_12)
+        self.horizontalLayout_18.setObjectName(u"horizontalLayout_18")
+        self.frame_13 = QFrame(self.frame_12)
+        self.frame_13.setObjectName(u"frame_13")
+        self.frame_13.setEnabled(True)
+        self.frame_13.setMinimumSize(QSize(160, 191))
+        self.frame_13.setMaximumSize(QSize(160, 191))
+        self.frame_13.setStyleSheet(u"background: #403C43;\n"
+"border-radius: 5px;")
+        self.frame_13.setFrameShape(QFrame.Shape.StyledPanel)
+        self.frame_13.setFrameShadow(QFrame.Shadow.Raised)
+        self.verticalLayout_10 = QVBoxLayout(self.frame_13)
+        self.verticalLayout_10.setObjectName(u"verticalLayout_10")
+        self.pushButton_5 = QPushButton(self.frame_13)
+        self.pushButton_5.setObjectName(u"pushButton_5")
+        font12 = QFont()
+        font12.setFamilies([u"Plump"])
+        font12.setBold(True)
+        self.pushButton_5.setFont(font12)
+        self.pushButton_5.setCursor(QCursor(Qt.CursorShape.PointingHandCursor))
+        self.pushButton_5.setStyleSheet(u"color: #fff;")
+
+        self.verticalLayout_10.addWidget(self.pushButton_5)
+
+        self.frame_15 = QFrame(self.frame_13)
+        self.frame_15.setObjectName(u"frame_15")
+        self.frame_15.setEnabled(True)
+        self.frame_15.setMinimumSize(QSize(0, 30))
+        self.frame_15.setMaximumSize(QSize(16777215, 20))
+        self.frame_15.setFrameShape(QFrame.Shape.StyledPanel)
+        self.frame_15.setFrameShadow(QFrame.Shadow.Raised)
+        self.horizontalLayout_10 = QHBoxLayout(self.frame_15)
+        self.horizontalLayout_10.setObjectName(u"horizontalLayout_10")
+        self.horizontalSpacer_10 = QSpacerItem(40, 20, QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Minimum)
+
+        self.horizontalLayout_10.addItem(self.horizontalSpacer_10)
+
+        self.label_19 = QLabel(self.frame_15)
+        self.label_19.setObjectName(u"label_19")
+        self.label_19.setMinimumSize(QSize(0, 0))
+        self.label_19.setMaximumSize(QSize(150, 16777215))
+        font13 = QFont()
+        font13.setFamilies([u"Data Trash"])
+        font13.setPointSize(8)
+        self.label_19.setFont(font13)
+        self.label_19.setStyleSheet(u"color: white;\n"
+"background: none;")
+
+        self.horizontalLayout_10.addWidget(self.label_19)
+
+        self.horizontalSpacer_11 = QSpacerItem(40, 20, QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Minimum)
+
+        self.horizontalLayout_10.addItem(self.horizontalSpacer_11)
+
+
+        self.verticalLayout_10.addWidget(self.frame_15)
+
+        self.label_20 = QLabel(self.frame_13)
+        self.label_20.setObjectName(u"label_20")
+        self.label_20.setEnabled(True)
+        font14 = QFont()
+        font14.setFamilies([u"Intro Black"])
+        font14.setPointSize(8)
+        font14.setBold(True)
+        self.label_20.setFont(font14)
+        self.label_20.setStyleSheet(u"color: white;\n"
+"background: none;")
+        self.label_20.setScaledContents(False)
+        self.label_20.setAlignment(Qt.AlignmentFlag.AlignCenter)
+
+        self.verticalLayout_10.addWidget(self.label_20)
+
+        self.frame_16 = QFrame(self.frame_13)
+        self.frame_16.setObjectName(u"frame_16")
+        self.frame_16.setEnabled(True)
+        self.frame_16.setMinimumSize(QSize(0, 63))
+        self.frame_16.setFrameShape(QFrame.Shape.StyledPanel)
+        self.frame_16.setFrameShadow(QFrame.Shadow.Raised)
+        self.horizontalLayout_12 = QHBoxLayout(self.frame_16)
+        self.horizontalLayout_12.setObjectName(u"horizontalLayout_12")
+        self.label_6 = QLabel(self.frame_16)
+        self.label_6.setObjectName(u"label_6")
+        self.label_6.setMinimumSize(QSize(50, 50))
+        self.label_6.setMaximumSize(QSize(50, 50))
+        self.label_6.setPixmap(QPixmap(u":/images/gems/Gemstone_Icon_Kit/1.png"))
+        self.label_6.setScaledContents(True)
+        self.label_6.setAlignment(Qt.AlignmentFlag.AlignCenter)
+        self.label_6.setWordWrap(False)
+
+        self.horizontalLayout_12.addWidget(self.label_6)
+
+
+        self.verticalLayout_10.addWidget(self.frame_16, 0, Qt.AlignmentFlag.AlignVCenter)
+
+        self.frame_17 = QFrame(self.frame_13)
+        self.frame_17.setObjectName(u"frame_17")
+        self.frame_17.setStyleSheet(u"padding: 0;\n"
+"margin: 0;")
+        self.frame_17.setFrameShape(QFrame.Shape.StyledPanel)
+        self.frame_17.setFrameShadow(QFrame.Shadow.Raised)
+        self.horizontalLayout_13 = QHBoxLayout(self.frame_17)
+        self.horizontalLayout_13.setObjectName(u"horizontalLayout_13")
+        self.horizontalSpacer_14 = QSpacerItem(40, 20, QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Minimum)
+
+        self.horizontalLayout_13.addItem(self.horizontalSpacer_14)
+
+        self.label_7 = QLabel(self.frame_17)
+        self.label_7.setObjectName(u"label_7")
+        self.label_7.setFont(font8)
+        self.label_7.setStyleSheet(u"color: #fff;")
+
+        self.horizontalLayout_13.addWidget(self.label_7)
+
+        self.horizontalSpacer_15 = QSpacerItem(40, 20, QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Minimum)
+
+        self.horizontalLayout_13.addItem(self.horizontalSpacer_15)
+
+
+        self.verticalLayout_10.addWidget(self.frame_17)
+
+
+        self.horizontalLayout_18.addWidget(self.frame_13)
+
+        self.frame_14 = QFrame(self.frame_12)
+        self.frame_14.setObjectName(u"frame_14")
+        self.frame_14.setEnabled(True)
+        self.frame_14.setMinimumSize(QSize(160, 191))
+        self.frame_14.setMaximumSize(QSize(160, 191))
+        self.frame_14.setStyleSheet(u"background: #403C43;\n"
+"border-radius: 5px;")
+        self.frame_14.setFrameShape(QFrame.Shape.StyledPanel)
+        self.frame_14.setFrameShadow(QFrame.Shadow.Raised)
+        self.verticalLayout_7 = QVBoxLayout(self.frame_14)
         self.verticalLayout_7.setObjectName(u"verticalLayout_7")
+        self.frame_18 = QFrame(self.frame_14)
+        self.frame_18.setObjectName(u"frame_18")
+        self.frame_18.setEnabled(True)
+        self.frame_18.setMinimumSize(QSize(0, 30))
+        self.frame_18.setMaximumSize(QSize(16777215, 20))
+        self.frame_18.setFrameShape(QFrame.Shape.StyledPanel)
+        self.frame_18.setFrameShadow(QFrame.Shadow.Raised)
+        self.horizontalLayout_11 = QHBoxLayout(self.frame_18)
+        self.horizontalLayout_11.setObjectName(u"horizontalLayout_11")
+        self.horizontalSpacer_12 = QSpacerItem(40, 20, QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Minimum)
+
+        self.horizontalLayout_11.addItem(self.horizontalSpacer_12)
+
+        self.label_21 = QLabel(self.frame_18)
+        self.label_21.setObjectName(u"label_21")
+        self.label_21.setMinimumSize(QSize(0, 0))
+        self.label_21.setMaximumSize(QSize(150, 16777215))
+        font15 = QFont()
+        font15.setFamilies([u"Plump"])
+        font15.setPointSize(8)
+        font15.setBold(True)
+        self.label_21.setFont(font15)
+        self.label_21.setStyleSheet(u"color: white;\n"
+"background: none;")
+
+        self.horizontalLayout_11.addWidget(self.label_21)
+
+        self.horizontalSpacer_13 = QSpacerItem(40, 20, QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Minimum)
+
+        self.horizontalLayout_11.addItem(self.horizontalSpacer_13)
+
+
+        self.verticalLayout_7.addWidget(self.frame_18)
+
+        self.frame_19 = QFrame(self.frame_14)
+        self.frame_19.setObjectName(u"frame_19")
+        self.frame_19.setEnabled(True)
+        self.frame_19.setMinimumSize(QSize(0, 63))
+        self.frame_19.setFrameShape(QFrame.Shape.StyledPanel)
+        self.frame_19.setFrameShadow(QFrame.Shadow.Raised)
+        self.horizontalLayout_14 = QHBoxLayout(self.frame_19)
+        self.horizontalLayout_14.setObjectName(u"horizontalLayout_14")
+        self.label_8 = QLabel(self.frame_19)
+        self.label_8.setObjectName(u"label_8")
+        self.label_8.setMinimumSize(QSize(50, 50))
+        self.label_8.setMaximumSize(QSize(50, 50))
+        self.label_8.setPixmap(QPixmap(u":/images/gems/Gemstone_Icon_Kit/2.png"))
+        self.label_8.setScaledContents(True)
+        self.label_8.setAlignment(Qt.AlignmentFlag.AlignCenter)
+        self.label_8.setWordWrap(False)
+
+        self.horizontalLayout_14.addWidget(self.label_8)
+
+
+        self.verticalLayout_7.addWidget(self.frame_19, 0, Qt.AlignmentFlag.AlignVCenter)
+
+        self.verticalSpacer_5 = QSpacerItem(20, 40, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding)
+
+        self.verticalLayout_7.addItem(self.verticalSpacer_5)
+
+        self.frame_20 = QFrame(self.frame_14)
+        self.frame_20.setObjectName(u"frame_20")
+        self.frame_20.setStyleSheet(u"background-color: qlineargradient(spread:pad, x1:0, y1:0.131, x2:1, y2:0.864, stop:0 rgba(255, 47, 47, 200), stop:1 rgba(255, 53, 53, 200));\n"
+"")
+        self.frame_20.setFrameShape(QFrame.Shape.StyledPanel)
+        self.frame_20.setFrameShadow(QFrame.Shadow.Raised)
+        self.horizontalLayout_15 = QHBoxLayout(self.frame_20)
+        self.horizontalLayout_15.setObjectName(u"horizontalLayout_15")
+        self.horizontalSpacer_16 = QSpacerItem(40, 20, QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Minimum)
+
+        self.horizontalLayout_15.addItem(self.horizontalSpacer_16)
+
+        self.label_14 = QLabel(self.frame_20)
+        self.label_14.setObjectName(u"label_14")
+        font16 = QFont()
+        font16.setFamilies([u"Intro Black"])
+        font16.setPointSize(8)
+        self.label_14.setFont(font16)
+        self.label_14.setStyleSheet(u"color: #fff;\n"
+"background: none;")
+
+        self.horizontalLayout_15.addWidget(self.label_14)
+
+        self.label_4 = QLabel(self.frame_20)
+        self.label_4.setObjectName(u"label_4")
+        self.label_4.setFont(font16)
+        self.label_4.setStyleSheet(u"background: none;")
+
+        self.horizontalLayout_15.addWidget(self.label_4)
+
+        self.horizontalSpacer_17 = QSpacerItem(40, 20, QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Minimum)
+
+        self.horizontalLayout_15.addItem(self.horizontalSpacer_17)
+
+
+        self.verticalLayout_7.addWidget(self.frame_20)
+
+
+        self.horizontalLayout_18.addWidget(self.frame_14)
+
+        self.frame_21 = QFrame(self.frame_12)
+        self.frame_21.setObjectName(u"frame_21")
+        self.frame_21.setEnabled(True)
+        self.frame_21.setMinimumSize(QSize(160, 191))
+        self.frame_21.setMaximumSize(QSize(160, 191))
+        self.frame_21.setStyleSheet(u"background: #403C43;\n"
+"border-radius: 5px;")
+        self.frame_21.setFrameShape(QFrame.Shape.StyledPanel)
+        self.frame_21.setFrameShadow(QFrame.Shadow.Raised)
+        self.verticalLayout_9 = QVBoxLayout(self.frame_21)
+        self.verticalLayout_9.setObjectName(u"verticalLayout_9")
+        self.frame_22 = QFrame(self.frame_21)
+        self.frame_22.setObjectName(u"frame_22")
+        self.frame_22.setEnabled(True)
+        self.frame_22.setMinimumSize(QSize(0, 30))
+        self.frame_22.setMaximumSize(QSize(16777215, 20))
+        self.frame_22.setFrameShape(QFrame.Shape.StyledPanel)
+        self.frame_22.setFrameShadow(QFrame.Shadow.Raised)
+        self.horizontalLayout_17 = QHBoxLayout(self.frame_22)
+        self.horizontalLayout_17.setObjectName(u"horizontalLayout_17")
+        self.horizontalSpacer_18 = QSpacerItem(40, 20, QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Minimum)
+
+        self.horizontalLayout_17.addItem(self.horizontalSpacer_18)
+
+        self.label_22 = QLabel(self.frame_22)
+        self.label_22.setObjectName(u"label_22")
+        self.label_22.setMinimumSize(QSize(0, 0))
+        self.label_22.setMaximumSize(QSize(150, 16777215))
+        self.label_22.setFont(font15)
+        self.label_22.setStyleSheet(u"color: white;\n"
+"background: none;")
+
+        self.horizontalLayout_17.addWidget(self.label_22)
+
+        self.horizontalSpacer_19 = QSpacerItem(40, 20, QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Minimum)
+
+        self.horizontalLayout_17.addItem(self.horizontalSpacer_19)
+
+
+        self.verticalLayout_9.addWidget(self.frame_22)
+
+        self.frame_23 = QFrame(self.frame_21)
+        self.frame_23.setObjectName(u"frame_23")
+        self.frame_23.setEnabled(True)
+        self.frame_23.setMinimumSize(QSize(0, 63))
+        self.frame_23.setFrameShape(QFrame.Shape.StyledPanel)
+        self.frame_23.setFrameShadow(QFrame.Shadow.Raised)
+        self.horizontalLayout_19 = QHBoxLayout(self.frame_23)
+        self.horizontalLayout_19.setObjectName(u"horizontalLayout_19")
+        self.label_9 = QLabel(self.frame_23)
+        self.label_9.setObjectName(u"label_9")
+        self.label_9.setMinimumSize(QSize(50, 50))
+        self.label_9.setMaximumSize(QSize(50, 50))
+        self.label_9.setPixmap(QPixmap(u":/images/gems/Gemstone_Icon_Kit/2.png"))
+        self.label_9.setScaledContents(True)
+        self.label_9.setAlignment(Qt.AlignmentFlag.AlignCenter)
+        self.label_9.setWordWrap(False)
+
+        self.horizontalLayout_19.addWidget(self.label_9)
+
+
+        self.verticalLayout_9.addWidget(self.frame_23, 0, Qt.AlignmentFlag.AlignVCenter)
+
+        self.verticalSpacer_6 = QSpacerItem(20, 40, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding)
+
+        self.verticalLayout_9.addItem(self.verticalSpacer_6)
+
+        self.frame_24 = QFrame(self.frame_21)
+        self.frame_24.setObjectName(u"frame_24")
+        self.frame_24.setStyleSheet(u"background-color: qlineargradient(spread:pad, x1:0, y1:0.131, x2:1, y2:0.864, stop:0 rgba(255, 47, 47, 200), stop:1 rgba(255, 53, 53, 200));\n"
+"")
+        self.frame_24.setFrameShape(QFrame.Shape.StyledPanel)
+        self.frame_24.setFrameShadow(QFrame.Shadow.Raised)
+        self.horizontalLayout_20 = QHBoxLayout(self.frame_24)
+        self.horizontalLayout_20.setObjectName(u"horizontalLayout_20")
+        self.horizontalSpacer_20 = QSpacerItem(40, 20, QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Minimum)
+
+        self.horizontalLayout_20.addItem(self.horizontalSpacer_20)
+
+        self.label_15 = QLabel(self.frame_24)
+        self.label_15.setObjectName(u"label_15")
+        self.label_15.setFont(font16)
+        self.label_15.setStyleSheet(u"color: #fff;\n"
+"background: none;")
+
+        self.horizontalLayout_20.addWidget(self.label_15)
+
+        self.label_11 = QLabel(self.frame_24)
+        self.label_11.setObjectName(u"label_11")
+        self.label_11.setFont(font16)
+        self.label_11.setStyleSheet(u"background: none;")
+
+        self.horizontalLayout_20.addWidget(self.label_11)
+
+        self.horizontalSpacer_21 = QSpacerItem(40, 20, QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Minimum)
+
+        self.horizontalLayout_20.addItem(self.horizontalSpacer_21)
+
+
+        self.verticalLayout_9.addWidget(self.frame_24)
+
+
+        self.horizontalLayout_18.addWidget(self.frame_21)
+
+        self.frame_25 = QFrame(self.frame_12)
+        self.frame_25.setObjectName(u"frame_25")
+        self.frame_25.setEnabled(True)
+        self.frame_25.setMinimumSize(QSize(160, 191))
+        self.frame_25.setMaximumSize(QSize(160, 191))
+        self.frame_25.setStyleSheet(u"background: #403C43;\n"
+"border-radius: 5px;")
+        self.frame_25.setFrameShape(QFrame.Shape.StyledPanel)
+        self.frame_25.setFrameShadow(QFrame.Shadow.Raised)
+        self.verticalLayout_12 = QVBoxLayout(self.frame_25)
+        self.verticalLayout_12.setObjectName(u"verticalLayout_12")
+        self.frame_26 = QFrame(self.frame_25)
+        self.frame_26.setObjectName(u"frame_26")
+        self.frame_26.setEnabled(True)
+        self.frame_26.setMinimumSize(QSize(0, 30))
+        self.frame_26.setMaximumSize(QSize(16777215, 20))
+        self.frame_26.setFrameShape(QFrame.Shape.StyledPanel)
+        self.frame_26.setFrameShadow(QFrame.Shadow.Raised)
+        self.horizontalLayout_21 = QHBoxLayout(self.frame_26)
+        self.horizontalLayout_21.setObjectName(u"horizontalLayout_21")
+        self.horizontalSpacer_22 = QSpacerItem(40, 20, QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Minimum)
+
+        self.horizontalLayout_21.addItem(self.horizontalSpacer_22)
+
+        self.label_23 = QLabel(self.frame_26)
+        self.label_23.setObjectName(u"label_23")
+        self.label_23.setMinimumSize(QSize(0, 0))
+        self.label_23.setMaximumSize(QSize(150, 16777215))
+        self.label_23.setFont(font15)
+        self.label_23.setStyleSheet(u"color: white;\n"
+"background: none;")
+
+        self.horizontalLayout_21.addWidget(self.label_23)
+
+        self.horizontalSpacer_23 = QSpacerItem(40, 20, QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Minimum)
+
+        self.horizontalLayout_21.addItem(self.horizontalSpacer_23)
+
+
+        self.verticalLayout_12.addWidget(self.frame_26)
+
+        self.frame_27 = QFrame(self.frame_25)
+        self.frame_27.setObjectName(u"frame_27")
+        self.frame_27.setEnabled(True)
+        self.frame_27.setMinimumSize(QSize(0, 63))
+        self.frame_27.setFrameShape(QFrame.Shape.StyledPanel)
+        self.frame_27.setFrameShadow(QFrame.Shadow.Raised)
+        self.horizontalLayout_22 = QHBoxLayout(self.frame_27)
+        self.horizontalLayout_22.setObjectName(u"horizontalLayout_22")
+        self.label_12 = QLabel(self.frame_27)
+        self.label_12.setObjectName(u"label_12")
+        self.label_12.setMinimumSize(QSize(50, 50))
+        self.label_12.setMaximumSize(QSize(50, 50))
+        self.label_12.setPixmap(QPixmap(u":/images/gems/Gemstone_Icon_Kit/2.png"))
+        self.label_12.setScaledContents(True)
+        self.label_12.setAlignment(Qt.AlignmentFlag.AlignCenter)
+        self.label_12.setWordWrap(False)
+
+        self.horizontalLayout_22.addWidget(self.label_12)
+
+
+        self.verticalLayout_12.addWidget(self.frame_27, 0, Qt.AlignmentFlag.AlignVCenter)
+
+        self.verticalSpacer_7 = QSpacerItem(20, 40, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding)
+
+        self.verticalLayout_12.addItem(self.verticalSpacer_7)
+
+        self.frame_28 = QFrame(self.frame_25)
+        self.frame_28.setObjectName(u"frame_28")
+        self.frame_28.setStyleSheet(u"background-color: qlineargradient(spread:pad, x1:0, y1:0.131, x2:1, y2:0.864, stop:0 rgba(255, 47, 47, 200), stop:1 rgba(255, 53, 53, 200));\n"
+"")
+        self.frame_28.setFrameShape(QFrame.Shape.StyledPanel)
+        self.frame_28.setFrameShadow(QFrame.Shadow.Raised)
+        self.horizontalLayout_23 = QHBoxLayout(self.frame_28)
+        self.horizontalLayout_23.setObjectName(u"horizontalLayout_23")
+        self.horizontalSpacer_24 = QSpacerItem(40, 20, QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Minimum)
+
+        self.horizontalLayout_23.addItem(self.horizontalSpacer_24)
+
+        self.label_16 = QLabel(self.frame_28)
+        self.label_16.setObjectName(u"label_16")
+        self.label_16.setFont(font16)
+        self.label_16.setStyleSheet(u"color: #fff;\n"
+"background: none;")
+
+        self.horizontalLayout_23.addWidget(self.label_16)
+
+        self.label_17 = QLabel(self.frame_28)
+        self.label_17.setObjectName(u"label_17")
+        self.label_17.setFont(font16)
+        self.label_17.setStyleSheet(u"background: none;")
+
+        self.horizontalLayout_23.addWidget(self.label_17)
+
+        self.horizontalSpacer_25 = QSpacerItem(40, 20, QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Minimum)
+
+        self.horizontalLayout_23.addItem(self.horizontalSpacer_25)
+
+
+        self.verticalLayout_12.addWidget(self.frame_28)
+
+
+        self.horizontalLayout_18.addWidget(self.frame_25)
+
         self.scrollArea.setWidget(self.island_tasks_area)
         self.stackedWidget.addWidget(self.island_page)
 
-        self.verticalLayout_9.addWidget(self.stackedWidget)
+        self.verticalLayout_6.addWidget(self.stackedWidget)
 
         MainWindow.setCentralWidget(self.centralwidget)
 
@@ -617,5 +1060,22 @@ class Ui_MainWindow(object):
         self.label_10.setText(QCoreApplication.translate("MainWindow", u"\u041d\u0410\u0412\u042b\u041a", None))
         self.island_skill_counter.setText(QCoreApplication.translate("MainWindow", u"0", None))
         self.island_level_title.setText(QCoreApplication.translate("MainWindow", u"\u041d\u0410\u0427\u0418\u041d\u0410\u042e\u0429\u0418\u0419", None))
+        self.pushButton_5.setText(QCoreApplication.translate("MainWindow", u"\u0414\u043e\u0431\u044b\u0432\u0430\u0442\u044c", None))
+        self.label_19.setText(QCoreApplication.translate("MainWindow", u"\u041e\u0431\u044b\u0447\u043d\u0430\u044f \u0448\u0430\u0445\u0442\u0430", None))
+        self.label_20.setText(QCoreApplication.translate("MainWindow", u"7 \u043e\u0447\u043a. \u043d\u0430\u0432\u044b\u043a\u0430 / 3\u0441\u0435\u043a.", None))
+        self.label_6.setText("")
+        self.label_7.setText(QCoreApplication.translate("MainWindow", u"0/550", None))
+        self.label_21.setText(QCoreApplication.translate("MainWindow", u"\u0417\u0430\u043a\u0440\u044b\u0442\u043e", None))
+        self.label_8.setText("")
+        self.label_14.setText(QCoreApplication.translate("MainWindow", u"\u0422\u0440\u0435\u0431\u0443\u0435\u0442\u0441\u044f \u0443\u0440\u043e\u0432\u0435\u043d\u044c", None))
+        self.label_4.setText(QCoreApplication.translate("MainWindow", u"2", None))
+        self.label_22.setText(QCoreApplication.translate("MainWindow", u"\u0417\u0430\u043a\u0440\u044b\u0442\u043e", None))
+        self.label_9.setText("")
+        self.label_15.setText(QCoreApplication.translate("MainWindow", u"\u0422\u0440\u0435\u0431\u0443\u0435\u0442\u0441\u044f \u0443\u0440\u043e\u0432\u0435\u043d\u044c", None))
+        self.label_11.setText(QCoreApplication.translate("MainWindow", u"2", None))
+        self.label_23.setText(QCoreApplication.translate("MainWindow", u"\u0417\u0430\u043a\u0440\u044b\u0442\u043e", None))
+        self.label_12.setText("")
+        self.label_16.setText(QCoreApplication.translate("MainWindow", u"\u0422\u0440\u0435\u0431\u0443\u0435\u0442\u0441\u044f \u0443\u0440\u043e\u0432\u0435\u043d\u044c", None))
+        self.label_17.setText(QCoreApplication.translate("MainWindow", u"2", None))
     # retranslateUi
 
