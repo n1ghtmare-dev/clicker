@@ -5,17 +5,60 @@
     <file>humster.png</file>
     <file>winterbg.png</file>
   </qresource>
+  <qresource prefix="images/sprites">
+    <file>sprites/blue_1/b6.png</file>
+    <file>sprites/blue_1/b5.png</file>
+    <file>sprites/blue_1/b4.png</file>
+    <file>sprites/blue_1/b3.png</file>
+    <file>sprites/blue_1/b2.png</file>
+    <file>sprites/blue_1/b1.png</file>
+    <file>sprites/blue_1/b13.png</file>
+    <file>sprites/blue_1/b12.png</file>
+    <file>sprites/blue_1/b11.png</file>
+    <file>sprites/blue_1/b10.png</file>
+    <file>sprites/blue_1/b9.png</file>
+    <file>sprites/blue_1/b8.png</file>
+    <file>sprites/blue_1/b7.png</file>
+    <file>sprites/blue_1.png</file>
+  </qresource>
   <qresource prefix="images/ranks">
+    <file>Shield/Master/shield-master-1.png</file>
+    <file>Shield/Master/shield-master-2.png</file>
+    <file>Shield/Master/shield-master-3.png</file>
+    <file>Shield/Master/shield-master-4.png</file>
+    <file>Shield/Master/shield-master-5.png</file>
+    <file>Shield/Master/shield-master-6.png</file>
+    <file>Shield/Master/shield-master-7.png</file>
+    <file>Shield/Master/shield-master-8.png</file>
+    <file>Shield/Master/shield-master-9.png</file>
+    <file>Shield/Master/shield-master-10.png</file>
+    <file>Shield/Master/shield-master-11.png</file>
+    <file>Shield/Onyx/shield-onyx-1.png</file>
+    <file>Shield/Onyx/shield-onyx-2.png</file>
+    <file>Shield/Onyx/shield-onyx-3.png</file>
+    <file>Shield/Onyx/shield-onyx-4.png</file>
+    <file>Shield/Onyx/shield-onyx-5.png</file>
+    <file>Shield/Onyx/shield-onyx-6.png</file>
+    <file>Shield/Onyx/shield-onyx-7.png</file>
+    <file>Shield/Platinum/shield-platinum-1.png</file>
+    <file>Shield/Platinum/shield-platinum-2.png</file>
+    <file>Shield/Platinum/shield-platinum-3.png</file>
+    <file>Shield/Platinum/shield-platinum-4.png</file>
+    <file>Shield/Platinum/shield-platinum-5.png</file>
+    <file>Shield/Platinum/shield-platinum-6.png</file>
+    <file>Shield/Ruby/shield-ruby-1.png</file>
+    <file>Shield/Ruby/shield-ruby-2.png</file>
+    <file>Shield/Ruby/shield-ruby-3.png</file>
+    <file>Shield/Ruby/shield-ruby-4.png</file>
+    <file>Shield/Ruby/shield-ruby-5.png</file>
+    <file>Shield/Silver/shield-silver-1.png</file>
+    <file>Shield/Silver/shield-silver-2.png</file>
+    <file>Shield/Silver/shield-silver-3.png</file>
+    <file>Shield/Silver/shield-silver-4.png</file>
     <file>Shield/Wood/shield-wood-1.png</file>
     <file>Shield/Wood/shield-wood-2.png</file>
     <file>Shield/Wood/shield-wood-3.png</file>
     <file>Shield/Wood/shield-wood-4.png</file>
-    <file>Shield/Wood/shield-wood-5.png</file>
-    <file>Shield/Wood/shield-wood-6.png</file>
-    <file>Shield/Wood/shield-wood-7.png</file>
-    <file>Shield/Wood/shield-wood-8.png</file>
-    <file>Shield/Wood/shield-wood-9.png</file>
-    <file>Shield/Wood/shield-wood-10.png</file>
   </qresource>
   <qresource prefix="images/gems">
     <file>Gemstone_Icon_Kit/1.png</file>

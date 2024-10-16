@@ -47,7 +47,7 @@ class Database:
             finally:
                 lock.release()
 
-    def edit_user(self, one_click=None, clicks_counter=None, level=None):
+    def edit_user(self, one_click=None, clicks_counter=None, level=None, skill=None):
         var = []
         if one_click:
             var.append(f"one_click = '{one_click}'")
@@ -55,6 +55,8 @@ class Database:
             var.append(f"clicks_counter = '{clicks_counter}'")
         if level:
             var.append(f"level = '{level}'")
+        if skill:
+            var.append(f"skill = '{skill}'")
         with self.connection:
             try:
                 lock.acquire(True)
@@ -89,6 +91,34 @@ class Database:
                 sql = "SELECT * FROM tasks WHERE id = ?"
                 res = self.cursor.execute(sql, (task_id,)).fetchone()
                 return res
+            finally:
+                lock.release()
+
+    def plus_use_task(self, task_id, use):
+        with self.connection:
+            try:
+                lock.acquire(True)
+                sql = "UPDATE tasks SET done = ? WHERE id = ?"
+                self.cursor.execute(sql, (use, task_id,))
+            finally:
+                lock.release()
+
+    def get_good_info(self, good_id):
+        with self.connection:
+            try:
+                lock.acquire(True)
+                sql = "SELECT * FROM click_shop WHERE id = ?"
+                res = self.cursor.execute(sql, (good_id,)).fetchone()
+                return res
+            finally:
+                lock.release()
+
+    def edit_good_use(self, good_id, use):
+        with self.connection:
+            try:
+                lock.acquire(True)
+                sql = "UPDATE click_shop SET use = ? WHERE id = ?"
+                self.cursor.execute(sql, (use, good_id,))
             finally:
                 lock.release()
 
