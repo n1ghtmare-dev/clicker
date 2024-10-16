@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import sqlite3
 from threading import Lock
 
@@ -64,6 +65,31 @@ class Database:
                 self.cursor.execute(sql)
             finally:
                 lock.release()
+=======
+import aiosqlite
+
+class Database:
+    def __init__(self, file_name):
+        self.file_name = file_name
+
+    # Метод, обрабатывающий запросы
+    async def execute(self, sql: str, parameters: tuple=None, fetchone=None, fetchall=False, commit=False):
+        async with aiosqlite.connect(self.file_name) as db:
+            if not parameters:
+                parameters = ()
+            data = None
+            cursor = await db.cursor()
+            await cursor.execute(sql, parameters) # Отправляем запрос
+
+            if commit:
+                await db.commit()
+            if fetchone:
+                data = await cursor.fetchone()
+            if fetchall:
+                data = await cursor.fetchall()
+
+            return data
+>>>>>>> main
 
     def save_user_data(self, one_click, clicks_counter):
         with self.connection:
@@ -73,6 +99,7 @@ class Database:
                 self.cursor.execute(sql, (one_click, clicks_counter,))
             finally:
                 lock.release()
+<<<<<<< HEAD
 
     def get_tasks(self):
         with self.connection:
@@ -122,3 +149,6 @@ class Database:
             finally:
                 lock.release()
 
+=======
+>>>>>>> 028a1b2 (added assets, ranks system, new GUI)
+>>>>>>> main

@@ -16,10 +16,15 @@ from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
     QImage, QKeySequence, QLinearGradient, QPainter,
     QPalette, QPixmap, QRadialGradient, QTransform)
 from PySide6.QtWidgets import (QApplication, QFrame, QHBoxLayout, QLabel,
+<<<<<<< HEAD
     QMainWindow, QProgressBar, QPushButton, QScrollArea,
     QSizePolicy, QSpacerItem, QStackedWidget, QVBoxLayout,
     QWidget)
 import images_rc
+=======
+    QMainWindow, QProgressBar, QPushButton, QSizePolicy,
+    QVBoxLayout, QWidget)
+>>>>>>> main
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
@@ -31,6 +36,7 @@ class Ui_MainWindow(object):
         MainWindow.setMaximumSize(QSize(900, 600))
         MainWindow.setBaseSize(QSize(900, 600))
         MainWindow.setAutoFillBackground(False)
+<<<<<<< HEAD
         MainWindow.setStyleSheet(u"background-image: url(:/images/winterbg.png);")
         MainWindow.setInputMethodHints(Qt.InputMethodHint.ImhNone)
         self.centralwidget = QWidget(MainWindow)
@@ -99,17 +105,38 @@ class Ui_MainWindow(object):
 
         self.verticalLayout_5.addWidget(self.frame_4, 0, Qt.AlignmentFlag.AlignVCenter)
 
+=======
+        MainWindow.setStyleSheet(u"background-color: qlineargradient(spread:pad, x1:0.142, y1:0, x2:0.857955, y2:1, stop:0 rgba(35, 14, 54, 255), stop:1 rgba(102, 40, 156, 255));")
+        MainWindow.setInputMethodHints(Qt.InputMethodHint.ImhNone)
+        self.centralwidget = QWidget(MainWindow)
+        self.centralwidget.setObjectName(u"centralwidget")
+        self.centralwidget.setStyleSheet(u"background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(0, 0, 0, 0), stop:1 rgba(255, 255, 255, 0));\n"
+"color: #fff;")
+        self.horizontalLayout_2 = QHBoxLayout(self.centralwidget)
+        self.horizontalLayout_2.setObjectName(u"horizontalLayout_2")
+        self.frame_2 = QFrame(self.centralwidget)
+        self.frame_2.setObjectName(u"frame_2")
+        self.frame_2.setMinimumSize(QSize(200, 500))
+        self.frame_2.setMaximumSize(QSize(16777215, 500))
+        self.verticalLayout_5 = QVBoxLayout(self.frame_2)
+        self.verticalLayout_5.setObjectName(u"verticalLayout_5")
+>>>>>>> main
         self.label_5 = QLabel(self.frame_2)
         self.label_5.setObjectName(u"label_5")
         self.label_5.setEnabled(True)
         self.label_5.setMaximumSize(QSize(250, 350))
+<<<<<<< HEAD
         self.label_5.setStyleSheet(u"background: none;")
         self.label_5.setPixmap(QPixmap(u":/images/humster.png"))
+=======
+        self.label_5.setPixmap(QPixmap(u"../images/Group 5.png"))
+>>>>>>> main
         self.label_5.setScaledContents(True)
         self.label_5.setAlignment(Qt.AlignmentFlag.AlignCenter)
 
         self.verticalLayout_5.addWidget(self.label_5)
 
+<<<<<<< HEAD
         self.verticalSpacer = QSpacerItem(20, 50, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Fixed)
 
         self.verticalLayout_5.addItem(self.verticalSpacer)
@@ -132,20 +159,47 @@ class Ui_MainWindow(object):
         font1 = QFont()
         font1.setFamilies([u"a_Concepto"])
         self.counts.setFont(font1)
+=======
+
+        self.horizontalLayout_2.addWidget(self.frame_2)
+
+        self.mainframe = QFrame(self.centralwidget)
+        self.mainframe.setObjectName(u"mainframe")
+        self.mainframe.setMinimumSize(QSize(300, 0))
+        self.mainframe.setMaximumSize(QSize(400, 550))
+        self.verticalLayout_3 = QVBoxLayout(self.mainframe)
+        self.verticalLayout_3.setSpacing(100)
+        self.verticalLayout_3.setObjectName(u"verticalLayout_3")
+        self.counts = QFrame(self.mainframe)
+        self.counts.setObjectName(u"counts")
+        self.counts.setMaximumSize(QSize(16777215, 200))
+        font = QFont()
+        font.setFamilies([u"a_Concepto"])
+        self.counts.setFont(font)
+>>>>>>> main
         self.verticalLayout = QVBoxLayout(self.counts)
         self.verticalLayout.setObjectName(u"verticalLayout")
         self.verticalLayout.setContentsMargins(-1, -1, -1, 1)
         self.label = QLabel(self.counts)
         self.label.setObjectName(u"label")
+<<<<<<< HEAD
         font2 = QFont()
         font2.setFamilies([u"a_Concepto"])
         font2.setPointSize(42)
         self.label.setFont(font2)
         self.label.setStyleSheet(u"background: none;")
+=======
+        font1 = QFont()
+        font1.setFamilies([u"a_Concepto"])
+        font1.setPointSize(42)
+        self.label.setFont(font1)
+        self.label.setStyleSheet(u"text-shadow: -1px 2px 6px rgba(0, 0, 0, 0.5);")
+>>>>>>> main
         self.label.setAlignment(Qt.AlignmentFlag.AlignCenter)
 
         self.verticalLayout.addWidget(self.label)
 
+<<<<<<< HEAD
         self.clicks_counter = QLabel(self.counts)
         self.clicks_counter.setObjectName(u"clicks_counter")
         self.clicks_counter.setFont(font2)
@@ -215,10 +269,64 @@ class Ui_MainWindow(object):
         self.frame.setObjectName(u"frame")
         self.frame.setMinimumSize(QSize(200, 300))
         self.frame.setStyleSheet(u"background: none;")
+=======
+        self.label_2 = QLabel(self.counts)
+        self.label_2.setObjectName(u"label_2")
+        self.label_2.setFont(font1)
+        self.label_2.setStyleSheet(u"text-shadow: -1px 2px 6px rgba(0, 0, 0, 0.5);")
+        self.label_2.setTextFormat(Qt.TextFormat.AutoText)
+        self.label_2.setAlignment(Qt.AlignmentFlag.AlignCenter)
+        self.label_2.setWordWrap(False)
+
+        self.verticalLayout.addWidget(self.label_2)
+
+
+        self.verticalLayout_3.addWidget(self.counts, 0, Qt.AlignmentFlag.AlignVCenter)
+
+        self.pushButton = QPushButton(self.mainframe)
+        self.pushButton.setObjectName(u"pushButton")
+        self.pushButton.setEnabled(True)
+        self.pushButton.setMinimumSize(QSize(0, 220))
+        self.pushButton.setMaximumSize(QSize(99999, 220))
+        font2 = QFont()
+        font2.setPointSize(30)
+        self.pushButton.setFont(font2)
+        self.pushButton.setAutoFillBackground(False)
+        self.pushButton.setStyleSheet(u"border: 0;")
+        icon = QIcon()
+        icon.addFile(u"../images/Huobi BTC (HBTC) 01.png", QSize(), QIcon.Mode.Normal, QIcon.State.On)
+        self.pushButton.setIcon(icon)
+        self.pushButton.setIconSize(QSize(300, 300))
+        self.pushButton.setCheckable(False)
+        self.pushButton.setAutoRepeat(False)
+        self.pushButton.setAutoExclusive(False)
+        self.pushButton.setAutoDefault(False)
+
+        self.verticalLayout_3.addWidget(self.pushButton, 0, Qt.AlignmentFlag.AlignVCenter)
+
+        self.pushButton_2 = QPushButton(self.mainframe)
+        self.pushButton_2.setObjectName(u"pushButton_2")
+        font3 = QFont()
+        font3.setFamilies([u"a_Concepto"])
+        font3.setPointSize(22)
+        self.pushButton_2.setFont(font3)
+        self.pushButton_2.setStyleSheet(u"border: none;\n"
+"text-shadow: -1px 2px 6px rgba(0, 0, 0, 0.5);")
+
+        self.verticalLayout_3.addWidget(self.pushButton_2)
+
+
+        self.horizontalLayout_2.addWidget(self.mainframe, 0, Qt.AlignmentFlag.AlignVCenter)
+
+        self.frame = QFrame(self.centralwidget)
+        self.frame.setObjectName(u"frame")
+        self.frame.setMinimumSize(QSize(200, 0))
+>>>>>>> main
         self.verticalLayout_4 = QVBoxLayout(self.frame)
         self.verticalLayout_4.setObjectName(u"verticalLayout_4")
         self.rang = QFrame(self.frame)
         self.rang.setObjectName(u"rang")
+<<<<<<< HEAD
         sizePolicy1 = QSizePolicy(QSizePolicy.Policy.MinimumExpanding, QSizePolicy.Policy.MinimumExpanding)
         sizePolicy1.setHorizontalStretch(0)
         sizePolicy1.setVerticalStretch(0)
@@ -1087,14 +1195,77 @@ class Ui_MainWindow(object):
         self.stackedWidget.addWidget(self.island_page)
 
         self.verticalLayout_9.addWidget(self.stackedWidget)
+=======
+        self.rang.setMaximumSize(QSize(16777215, 200))
+        self.verticalLayout_2 = QVBoxLayout(self.rang)
+        self.verticalLayout_2.setObjectName(u"verticalLayout_2")
+        self.label_3 = QLabel(self.rang)
+        self.label_3.setObjectName(u"label_3")
+        self.label_3.setFont(font3)
+        self.label_3.setLayoutDirection(Qt.LayoutDirection.LeftToRight)
+        self.label_3.setStyleSheet(u"text-shadow: -1px 2px 6px rgba(0, 0, 0, 0.5);")
+        self.label_3.setAlignment(Qt.AlignmentFlag.AlignCenter)
+
+        self.verticalLayout_2.addWidget(self.label_3)
+
+        self.progressBar = QProgressBar(self.rang)
+        self.progressBar.setObjectName(u"progressBar")
+        self.progressBar.setMinimumSize(QSize(200, 0))
+        self.progressBar.setMaximumSize(QSize(300, 16777215))
+        self.progressBar.setLayoutDirection(Qt.LayoutDirection.LeftToRight)
+        self.progressBar.setAutoFillBackground(False)
+        self.progressBar.setStyleSheet(u"QProgressBar{\n"
+"	background-color: rgb(103, 103, 103);\n"
+"	border-radius: 5px;\n"
+"}\n"
+"\n"
+"QProgressBar::chunk{\n"
+"	border-radius: 5px;\n"
+"	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(85, 255, 127, 255), stop:1 rgba(85, 255, 255, 255));\n"
+"}")
+        self.progressBar.setValue(22)
+        self.progressBar.setAlignment(Qt.AlignmentFlag.AlignCenter)
+        self.progressBar.setTextVisible(False)
+        self.progressBar.setFormat(u"%p%")
+
+        self.verticalLayout_2.addWidget(self.progressBar)
+
+        self.label_4 = QLabel(self.rang)
+        self.label_4.setObjectName(u"label_4")
+        font4 = QFont()
+        font4.setFamilies([u"a_Concepto"])
+        font4.setPointSize(18)
+        self.label_4.setFont(font4)
+        self.label_4.setStyleSheet(u"text-shadow: -1px 2px 6px rgba(0, 0, 0, 0.5);")
+        self.label_4.setAlignment(Qt.AlignmentFlag.AlignCenter)
+
+        self.verticalLayout_2.addWidget(self.label_4)
+
+
+        self.verticalLayout_4.addWidget(self.rang, 0, Qt.AlignmentFlag.AlignVCenter)
+
+        self.widget = QWidget(self.frame)
+        self.widget.setObjectName(u"widget")
+        self.widget.setMinimumSize(QSize(200, 400))
+        self.widget.setMaximumSize(QSize(16777215, 300))
+
+        self.verticalLayout_4.addWidget(self.widget)
+
+
+        self.horizontalLayout_2.addWidget(self.frame)
+>>>>>>> main
 
         MainWindow.setCentralWidget(self.centralwidget)
 
         self.retranslateUi(MainWindow)
 
+<<<<<<< HEAD
         self.stackedWidget.setCurrentIndex(1)
         self.click_btn.setDefault(False)
         self.stackedWidget_2.setCurrentIndex(2)
+=======
+        self.pushButton.setDefault(False)
+>>>>>>> main
 
 
         QMetaObject.connectSlotsByName(MainWindow)
@@ -1102,6 +1273,7 @@ class Ui_MainWindow(object):
 
     def retranslateUi(self, MainWindow):
         MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"Crypto Miner", None))
+<<<<<<< HEAD
         self.skin_btn.setText(QCoreApplication.translate("MainWindow", u"\u0421\u043a\u0438\u043d", None))
         self.label_5.setText("")
         self.label.setText(QCoreApplication.translate("MainWindow", u"\u041c\u041e\u041d\u0415\u0422\u042b", None))
@@ -1152,5 +1324,17 @@ class Ui_MainWindow(object):
         self.btn_one_boost_buy_2.setText(QCoreApplication.translate("MainWindow", u"\u041a\u0423\u041f\u0418\u0422\u042c", None))
         self.label_54.setText(QCoreApplication.translate("MainWindow", u"9590", None))
         self.label_56.setText(QCoreApplication.translate("MainWindow", u"0/10", None))
+=======
+        self.label_5.setText("")
+        self.label.setText(QCoreApplication.translate("MainWindow", u"COUNT", None))
+        self.label_2.setText(QCoreApplication.translate("MainWindow", u"0", None))
+        self.pushButton.setText("")
+        self.pushButton_2.setText(QCoreApplication.translate("MainWindow", u"\u041c\u0410\u0413\u0410\u0417\u0418\u041d", None))
+        self.label_3.setText(QCoreApplication.translate("MainWindow", u"RANG", None))
+#if QT_CONFIG(accessibility)
+        self.progressBar.setAccessibleName("")
+#endif // QT_CONFIG(accessibility)
+        self.label_4.setText(QCoreApplication.translate("MainWindow", u"0/1000", None))
+>>>>>>> main
     # retranslateUi
 
